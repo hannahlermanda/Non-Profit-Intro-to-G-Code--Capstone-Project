@@ -8,6 +8,10 @@ body{
     background-color: aquamarine;
 }
 
+.navoptions{
+  padding: 5px;
+}
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -125,3 +129,9 @@ body{
   max-height: 175px;
   max-width: 175px;
 }
+
+/* .dark-mode {
+  background-color: purple;
+  color: lightblue;
+}
+*/
