@@ -1,15 +1,83 @@
 html{
     scroll-behavior: smooth;
     line-height: 1.75rem;
+    margin:0;
+    overflow-x: hidden;
 }
 
 body{
     color:black;
-    background-color: aquamarine;
+    background-image: url("https://images.unsplash.com/photo-1597571092324-ae854e0648b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark-mode {
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1626032038952-35c9d5b037c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navoptions{
+  display:flex;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: #717171;
+  border:1px solid black;
+  width: 10%;
+  margin: 0 auto;
   padding: 5px;
+  white-space: nowrap;
+}
+
+#lightdark{
+  padding: 10px 10px 10px 10px;
+  white-space: nowrap;
+  width:auto;
+  max-width: 35%;
+  max-height:35%;
+}
+
+.topnav{
+  position: sticky;
+  background-image: url("https://user-images.githubusercontent.com/113246857/202868759-a113f74b-8335-40aa-8bb8-a3df4c39bfea.png");
+  background-repeat: repeat-x;
+  background-size:cover;
+  max-height: 130px;
+  padding-bottom: 10%;
+  margin-bottom: 10px;
+  display:flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: auto;
+  text-align: center;
+}
+
+#navlogo{
+  display:flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  max-width: 250px;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.topnav a{
+  float:center;
+  color:black;
+  text-align:center;
+  padding:14px 16px;
 }
 
 #myBtn {
@@ -74,7 +142,7 @@ body{
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 98.2%; /*Have to put in media queries when adjusting the width*/
   text-align: center;
   background-color: rgba(0,0,0,0.8);
 }
@@ -123,11 +191,6 @@ body{
 .slidepic{
   width: 100%;
   max-height: 600px;
-}
-
-#navlogo{
-  max-height: 175px;
-  max-width: 175px;
 }
 
 /* .dark-mode {
