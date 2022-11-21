@@ -46,6 +46,11 @@ h1{
   max-height:35%;
 }
 
+.sections{
+  background-color: rgba(68, 181, 246, 0.24);
+}
+
+
 .topnav{
   position: sticky;
   background-image: url("https://user-images.githubusercontent.com/113246857/202934576-05efdfc4-b2b0-43ea-af2c-fc3eacab7fec.png");
