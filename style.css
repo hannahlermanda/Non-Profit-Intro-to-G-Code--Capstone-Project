@@ -19,6 +19,11 @@ body{
   background-size: cover;
 }
 
+
+h1{
+  font-size: xx-large;
+}
+
 .navoptions{
   display:flex;
   justify-content: space-around;
@@ -43,9 +48,9 @@ body{
 
 .topnav{
   position: sticky;
-  background-image: url("https://user-images.githubusercontent.com/113246857/202868759-a113f74b-8335-40aa-8bb8-a3df4c39bfea.png");
+  background-image: url("https://user-images.githubusercontent.com/113246857/202934576-05efdfc4-b2b0-43ea-af2c-fc3eacab7fec.png");
   background-repeat: repeat-x;
-  background-size:cover;
+  background-size: cover;
   max-height: 130px;
   padding-bottom: 10%;
   margin-bottom: 10px;
