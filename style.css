@@ -24,6 +24,19 @@ h1{
   font-size: xx-large;
 }
 
+#lightdark{
+  padding: 10px 10px 10px 10px;
+  white-space: nowrap;
+  width:auto;
+  max-width: 35%;
+  max-height:35%;
+}
+
+.sections{
+  background-color: rgba(68, 181, 246, 0.24);
+}
+
+/*Navigation */
 .navoptions{
   display:flex;
   justify-content: space-around;
@@ -37,19 +50,6 @@ h1{
   padding: 5px;
   white-space: nowrap;
 }
-
-#lightdark{
-  padding: 10px 10px 10px 10px;
-  white-space: nowrap;
-  width:auto;
-  max-width: 35%;
-  max-height:35%;
-}
-
-.sections{
-  background-color: rgba(68, 181, 246, 0.24);
-}
-
 
 .topnav{
   position: sticky;
@@ -83,6 +83,20 @@ h1{
   padding: 0 auto;
 }
 
+#navlogo2{
+  display:flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  max-width: 250px;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
 .topnav a{
   float:center;
   color:black;
@@ -90,6 +104,35 @@ h1{
   padding:14px 16px;
 }
 
+@media screen and (max-width: 940px){
+  #navlogo{
+    display: none;
+  }
+
+  .homebutton{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 941px){
+  #navlogo2{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 727px){
+  #lightdark{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 728px){
+  #lightdark2{
+    display: none;
+  }
+}
+
+/*To Top Button*/
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
