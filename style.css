@@ -132,6 +132,58 @@ h1{
   }
 }
 
+/*What We Do Home section*/
+.whatWeDoPhotos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 900px;
+    column-gap: 20px;
+    row-gap: 20px;
+    width:100%;
+    height:auto;
+}
+
+.whatWeDoIndivPhotos{
+  max-width: 600px;
+  max-height: 400px;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px){
+  .whatWeDoPhotos{
+    flex-wrap:wrap;
+}
+}
+
+/*Who We Serve Home section*/
+
+.whoWeServePhotoSec{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.whoWeServePhoto{
+  max-width: 1200px;
+  max-height: 600px;
+  height: auto;
+  width: 100%;
+}
+
+/*Photos on Home Page*/
+/*.smallPhotos{
+  max-width: 100%;
+  width: 400px;
+  height:auto;
+  height: 400px;
+}*/
+
 /*To Top Button*/
 #myBtn {
     display: none; /* Hidden by default */
