@@ -246,6 +246,72 @@ width: 100%;
     }
 }
 
+#ourProgramsPhotosArt{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-height: 900px;
+  max-width: 1500px;
+  column-gap: 20px;
+  row-gap: 20px;
+  width:100%;
+  height:auto;
+
+}
+
+.ourProgramsIndivPhotosArtPic{
+  max-height: 350px;
+        min-height:350px;
+        max-width:520px;
+        height: auto;
+        width: 100%;
+  }
+
+.youtube {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    display:grid;
+  }
+
+.ourProgramsIndivPhotosArtVid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+  @media screen and (max-width: 794px){
+    .ourProgramsIndivPhotosArtPic{
+      display:none;
+      }
+    }
+
+  @media screen and (min-width: 795px){
+      .ourProgramsIndivPhotosArtVid,
+      .youtube{
+        display:none;
+        }
+    }
+
+  @media screen and (min-width: 1185px){
+    .ourProgramsIndivPhotosArtPic{
+        max-height: 350px;
+        min-height:350px;
+        max-width:520px;
+        height: auto;
+        width: 100%;
+      }
+    }
+
 /*Photos on Home Page*/
 /*.smallPhotos{
   max-width: 100%;
