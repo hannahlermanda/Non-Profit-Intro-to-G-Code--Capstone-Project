@@ -447,58 +447,56 @@ width: 100%;
 /* Styling for contact page */
 
 
-
-.contactContainer {
-  max-width: 510px;
-  min-width: 324px;
-  margin: 50px auto 0px;
-  background-color: $white;
-  border : 1px solid lighten($grey, 1%); 
-  border-bottom : 3px solid $grey;
+/* all of form */
+.contactcontainer{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-.row {
-  width: 100%;
-  margin: 0 0 1em 0;
-  padding: 0 2.5em;
-}
-/* picture on heading styling */
-.header {
+/* header with picture */
+.headercontact {
   padding: 1.5em 2.5em;
   border-bottom: 1px solid $grey; 
   background : url(https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpbGRyZW4lMjBwbGF5aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60) center 40%;
   color: $white;
 }
 
-.body{
-  padding: .5em 2.5em 1em;
-}
-
-.pull-right{
-  float: left;
-}
-
 .contacth1{
-  display: inline-block;
-  font-weight: 100;
-  border-bottom: 1px solid hsla(100%, 100%, 100% 0.3);
-  margin: 0 0 0.1em 0;
-  padding: 0 0 0.4em 0;
+  color: blue;
+  text-align: center;
 }
 
 .contacth3{
-
-  margin: 1em 0 0.4em 0;
+  color:blue;
+  text-align: center;
 }
 
-.btn{
-  display: inline-block;
-  padding: 0.743em 1.5em;
-  margin: 1.53em 0 0;
-  color: $white;
-  border-width:0 0 0 0;
-  border-bottom: 5px solid;
-  text-transform:uppercase;
-
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
+
+input[type=submit]{
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* when hovering over submit button */
+input[type=submit]:hover {
+  background-color: lightgray;
+}
+
+
+
 
