@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth;
     line-height: 1.75rem;
-    margin:0;
+    /*margin:0;*/
     overflow-x: hidden;
 }
 
@@ -10,6 +10,8 @@ body{
     background-image: url("https://images.unsplash.com/photo-1597571092324-ae854e0648b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .dark-mode {
@@ -19,9 +21,13 @@ body{
   background-size: cover;
 }
 
-ul{
+/*ul{
   margin-right: 20px;
-}
+}*/
+/*img{
+  object-fit: cover;
+}*/
+
 
 h1{
   font-size: xx-large;
@@ -37,7 +43,10 @@ h1{
 
 .sections{
   background-color: rgba(68, 181, 246, 0.24);
+  width:100%;
+  height:auto;
 }
+
 
 /*Navigation */
 .navoptions{
@@ -159,7 +168,7 @@ h1{
 @media screen and (max-width: 800px){
   .whatWeDoPhotos{
     flex-wrap:wrap;
-}
+  }
 }
 
 /*Who We Serve Home section*/
@@ -180,8 +189,7 @@ h1{
 }
 
 /*Our Programs Home section*/
-.ourProgramsPhotos,
-.ourProgramsPhotosNut{
+.ourProgramsPhotos{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -199,6 +207,7 @@ min-height: 260px;
 max-height: 300px;
 height: auto;
 width: 100%;
+object-fit: cover;
 }
 
 #greetingCardPhoto{
@@ -213,24 +222,40 @@ width: 100%;
   width: 100%;
 }
 
+.ourProgramsPhotosNut{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-height: 1000px;
+  column-gap: 20px;
+  row-gap: 20px;
+  width:100%;
+  height:auto;
+}
+
 .ourProgramsIndivPhotosNut{
   max-width: 350px;
   min-height: 260px;
   max-height: 300px;
   height: auto;
   width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1061px){
   .ourProgramsIndivPhotosWriting2,
   #greetingCardPhoto,
-  #zoomBees{
+  #zoomBees,
+  #thirdPhoto.ourProgramsIndivPhotos{
     display: none;
   }
 
   .ourProgramsIndivPhotos{
     max-width: 600px;
     max-height: 400px;
+    min-height: 326px;
     height: auto;
     width: 100%;
     }
@@ -238,7 +263,7 @@ width: 100%;
   .ourProgramsIndivPhotosNut{
     max-width: 500px;
     min-height: 300px;
-    max-height: 400px;
+    max-height:300px;
     height: auto;
     width: 100%;
     }
@@ -246,11 +271,12 @@ width: 100%;
 
 @media screen and (max-width: 775px){
   .ourProgramsIndivPhotos{
-    max-width: 700px;
-    max-height: 500px;
+    max-width: 450px;
+    max-height: 400px;
     height: auto;
     width: 100%;
     padding:10px;
+    object-fit: cover;
     }
 
     #backpackPhoto{
@@ -261,53 +287,29 @@ width: 100%;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      justify-items: center;
       max-height: 1100px;
+      flex-direction: column;
+      
     }
 
     .ourProgramsPhotosNut{
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      align-content:center;
-      justify-items: center;
-      max-height: 1100px;
-      max-width:450px;
       flex-direction: column;
     }
-
-
 
     .ourProgramsIndivPhotosNut{
-      max-width: 450px;
-      min-width:450px;
-      max-height: 400px;
-      height: auto;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      align-content:center;
-      justify-items: center;
-      flex-direction: column;
-      margin:0 auto;
+    max-width: 450px;
+    max-height: 400px;
+    height: auto;
+    width: 100%;
+    padding:10px;
     }
-}
 
-@media screen and (min-width: 623px) and (max-width: 626px){
-  #boyWorm{
-    margin-left: 4px;
-  }
-}
-
-@media screen and (min-width: 627px) and (max-width:629px){
-  #boyWorm{
-    margin-left: 7px;
-  }
-}
-
-@media screen and (min-width: 630px) and (max-width:640px){
-  #boyWorm{
-    margin-left: 13px;
-  }
+    .whatWeDoIndivPhotos{
+      max-width: 593px;
+      max-height: 400px;
+    }
 }
 
 #ourProgramsPhotosArt{
@@ -331,6 +333,7 @@ width: 100%;
   max-width:520px;
   height: auto;
   width: 100%;
+  object-fit: cover;
   }
 
 .youtube {
@@ -377,6 +380,50 @@ width: 100%;
       }
     }
 
+
+/*How to Join Us*/
+.howToJoinUsPhotos{
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 900px;
+  column-gap: 20px;
+  row-gap: 20px;
+  width:100%;
+  height:auto;
+}
+
+
+.howToJoinUsIndivPhotos{
+max-width: 500px;
+max-height: 300px;
+height: auto;
+width: 100%;
+text-align: center;
+float:left;
+margin-right: 20px;
+}
+
+.joinPara{
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 729px) {
+  .howToJoinUsIndivPhotos{
+    max-width: 400px;
+    max-height: 250px;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    float:none;
+    padding-bottom: 20px;
+    }
+  
+}
 /*Photos on Home Page*/
 /*.smallPhotos{
   max-width: 100%;
