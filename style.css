@@ -562,8 +562,8 @@ margin-right: 20px;
 .headercontact {
   padding: 1.5em 2.5em;
   border-bottom: 1px solid $grey; 
-  background : url(https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpbGRyZW4lMjBwbGF5aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60) center 40%;
-  color: $white;
+  background: url(https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpbGRyZW4lMjBwbGF5aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60) center 40%;
+  color: white;
 }
 
 .contacth1{
@@ -600,6 +600,36 @@ input[type=submit]{
 input[type=submit]:hover {
   background-color: lightgray;
 }
+ /* style for social media icons */
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width:50px;
+  text-align:center;
+  text-decoration: none;
+  
+ }
+
+ .fa:hover {
+  opacity: 0.7;
+ }
+
+ .fa-facebook{
+  background:#3B5998;
+  color: white;
+ }
+
+ .fa-twitter{
+  background:#55ACEE;
+  color: white;
+ }
+
+ .fa-instagram {
+  background: #fb3958;
+  color:white
+ }
+
+
 
 
 
