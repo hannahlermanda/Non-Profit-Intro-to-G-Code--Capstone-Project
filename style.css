@@ -130,6 +130,9 @@ h1{
   padding: 0 auto;
 }
 
+/*#navlog2anchor try to add to the anchor before the photo with no margins (0) */
+
+
 .topnav a{
   float:center;
   color:black;
