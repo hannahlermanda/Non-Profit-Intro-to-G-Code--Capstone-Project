@@ -53,7 +53,6 @@ h1{
   height:auto;
 }
 
-
 /*Navigation */
 .navoptions{
   display:flex;
@@ -129,8 +128,6 @@ h1{
   padding: 0 auto;
   flex-shrink:2;
 }
-
-/*#navlog2anchor try to add to the anchor before the photo with no margins (0) */
 
 .hidelogo{
   max-width: 200px;
@@ -942,20 +939,25 @@ input[type=submit]:hover {
   text-decoration: none;
   display: block;
   text-align: left;
-  bottom:0;
+ /* bottom:0;*/
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  bottom:0;
+  /*bottom:0;*/
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  bottom:0;
+ /* bottom:0;*/
 }
 
 button:hover{
   cursor: pointer;
 }
 
+@media screen and (max-width: 1150px){
+  .dropdown-content{
+    margin-top: 50px;
+  }
+}
