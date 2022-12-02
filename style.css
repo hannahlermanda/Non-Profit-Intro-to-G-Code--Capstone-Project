@@ -116,7 +116,7 @@ h1{
   padding: 0 auto;
 }
 
-#navlogo2{
+.navlogo2{
   display:flex;
   flex-flow: row wrap;
   justify-items: center;
@@ -124,14 +124,23 @@ h1{
   justify-content: center;
   justify-items: center;
   max-width: 250px;
-  width: 30%;
   height: auto;
   margin: 0 auto;
   padding: 0 auto;
+  flex-shrink:2;
 }
 
 /*#navlog2anchor try to add to the anchor before the photo with no margins (0) */
 
+.hidelogo{
+  max-width: 200px;
+  width: 100%;
+  height:auto;
+  flex-wrap: nowrap;
+  height: auto;
+  float: left;
+  flex-shrink: 0;
+}
 
 .topnav a{
   float:center;
@@ -140,7 +149,7 @@ h1{
   padding:14px 16px;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1095px){
   #navlogo{
     display: none;
   }
@@ -150,9 +159,86 @@ h1{
   }
 }
 
-@media screen and (min-width: 941px){
-  #navlogo2{
+@media screen and (min-width: 1096px){
+  .navlogo2,
+  .hidelogo{
     display:none;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .navlogo2{
+    max-width:225px;
+    height:auto;
+  }
+}
+
+@media screen and (max-width: 790px){
+  .navlogo2{
+    max-width:200px;
+    height:auto;
+  }
+}
+
+@media screen and (max-width: 611px){
+  .navlogo2{
+    max-width:180px;
+    height:auto;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .navlogo2{
+    max-width:160px;
+    height:auto;
+  }
+}
+
+@media screen and (max-width: 545px){
+  .navlogo2{
+    max-width:150px;
+    height:auto;
+    margin: none;
+  }
+}
+
+@media screen and (max-width: 520px){
+  .navlogo2{
+    max-width:130px;
+    height:auto;
+    margin: none;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .navlogo2{
+    max-width:100px;
+    height:auto;
+    margin: none;
+  }
+}
+
+@media screen and (max-width: 395px){
+  .navlogo2{
+    max-width:80px;
+    height:auto;
+    margin: none;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .navlogo2{
+    max-width:78px;
+    height:auto;
+    margin: none;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .navlogo2{
+    max-width:65px;
+    height:auto;
+    margin: none;
   }
 }
 
