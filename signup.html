@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Sign Up Form</title>
+</head>
+<body class="formbody">
+    <h1> A Place Called Home Sign Up Form</h1>
+    <form id="aptform">
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+            <input type="text"
+            id="name"
+            placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+            <input type="email"
+            id="email"
+            placeholder="Enter your email" />
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+        <!-- Dropdown options -->
+        <select name="role" id="role">
+            <option value="student">Parent</option>
+            <option value="intern">Youth / Young adult</option>
+            <option value="professional">
+                Professional
+            </option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+        <div class="form-control">
+            <label> What services are you interested in receiving? 
+                <small>(Check all that apply)</small>
+            </label>
+            <!--Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp"></input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp"></input></label>
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+        <!-- Multi-line Text Input Control -->
+        <button class="formbtn" type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+    <div>
+        <footer>
+            Created by <a href="https://www.linkedin.com/in/glendachicas/" target="_blank">Glenda Chicas</a>,</a></a> <a href="https://www.linkedin.com/in/hannahlermanda/" target="_blank">Hannah Lermanda</a>, and <a href="https://www.linkedin.com/in/robin-ensley/" target="_blank">Robin Ensley</a><br>
+            November 2022 <br>
+            Created in <a href="https://github.com/hannahlermanda/Non-Profit-Intro-to-G-Code-Capstone-Project" target="_blank">VS Code</a>
+        </footer>
+    </div>
+    
+</body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script type="text/javascript" src="javascript.js"></script>
+</html>
