@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title> Sign Up Form</title>
 </head>
-<body class="formbody">
-    <h1> A Place Called Home Sign Up Form</h1>
+<body id="formbody">
+    <h1> A Place Called Home Interest Form</h1>
     <form id="aptform">
         <div class="form-control">
             <label for="name" id="label-name">
@@ -49,40 +49,32 @@
         </select>
         </div>
         <div class="form-control">
-            <label> What services are you interested in receiving? 
+            <label> What program/services are you interested in receiving? 
                 <small>(Check all that apply)</small>
             </label>
             <!--Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Educational </input></label>
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Art, music, dance and other creative expressions </input></label>
             <label for="inp-3">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Community engagement and outreach (Basic necessities, career development, etc)</input></label>
             <label for="inp-4">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Health and Nutrition</input></label>
             <label for="inp-5">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Bridge to the Future Program</input></label>
             <label for="inp-6">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Rise at APCH</input></label>
             <label for="inp-7">
                 <input type="checkbox"
-                       name="inp"></input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp"></input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp"></input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Other</input></label>
+
         </div>
         <div class="form-control">
             <label for="comment">
@@ -92,6 +84,14 @@
             <textarea name="comment" id="comment"
                 placeholder="Enter your comment here">
             </textarea>
+        </div>
+        <div>
+            <h2></h2>
+            <p>Please input a number between 1 and 10;</p>
+            <input id="numb">
+            <button type="button"
+            onclick="myFunction()">Submit</button>
+            <p id="demo"></p>
         </div>
         <!-- Multi-line Text Input Control -->
         <button class="formbtn" type="submit" value="submit">
