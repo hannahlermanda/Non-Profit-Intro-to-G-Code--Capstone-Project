@@ -3,6 +3,7 @@ html{
     line-height: 1.75rem;
     /*margin:0;*/
     overflow-x: hidden;
+    font-size: 19px;
 }
 
 body{
@@ -12,6 +13,10 @@ body{
     background-size: cover;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+p{
+  line-height: 1.5;
 }
 
 .dark-mode {
@@ -56,6 +61,20 @@ h1{
   background-color: rgba(68, 181, 246, 0.24);
   width:100%;
   height:auto;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+p{
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*Navigation */
@@ -336,8 +355,128 @@ h1{
   height: auto;
   width: 100%;
 }
+/*Our Programs Home section */
+.programSection1,
+.programSection2{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
 
-/*Our Programs Home section*/
+@media screen and (min-width:1054px){
+  #ourProgramsSec{
+    margin:auto;
+    max-width: 90%;
+  }
+
+  .programSection2{
+    padding-bottom: 110px;
+  }
+
+  .reachPic{
+    max-width:400px;
+  }
+
+  .reachPic2{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width:1008px) and (max-width: 1053px){
+  .programSection2{
+    padding-bottom: 125px;
+  }
+
+  .reachPic{
+    max-width:400px;
+  }
+
+  .reachPic2{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width:933px) and (max-width: 1007px){
+  .programSection2{
+    padding-bottom: 100px;
+  }
+
+  .reachPic2{
+    display: none;
+  }
+}
+
+@media screen and (min-width:850px) and (max-width: 932px){
+  .programSection2{
+    padding-bottom: 70px;
+  }
+
+  .reachPic2{
+    display: none;
+  }
+}
+
+@media screen and (min-width:812px) and (max-width: 849px){
+  .programSection1,
+  .programSection2{
+    padding-bottom: 30px;
+  }
+
+  .reachPic2{
+    display: none;
+  }
+}
+
+@media screen and (min-width:776px) and (max-width: 814px) {
+  .programSection1,
+  .programSection2{
+    padding-bottom: 20px;
+  }
+
+  .reachPic2{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width:775px) {
+  .reachPic{
+    display:none;
+  }
+
+  .reachPic2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width:450px;
+    height: auto;
+    padding-bottom: 5%;
+  }
+
+
+  .programSection1,
+  .programSection2{
+    text-align: center;
+    float: none;
+    margin: auto;
+  }
+}
+
+.reachPic{
+  float:right;
+  height: auto;
+  width: 100%;
+  max-width:375px;
+  margin-right: 15px;
+  margin-left: 15px;
+  object-fit: contain;
+}
+
+/*Our Programs section*/
 .ourProgramsPhotos{
   display: flex;
   align-items: center;
@@ -557,7 +696,7 @@ margin-right: 20px;
 }
 
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 757px) {
   .howToJoinUsIndivPhotos{
     max-width: 400px;
     max-height: 250px;
