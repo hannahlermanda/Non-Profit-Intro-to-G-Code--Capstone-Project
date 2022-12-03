@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
     <title> Sign Up Form</title>
 </head>
-<body class="formbody">
-    <h1> A Place Called Home Sign Up Form</h1>
-    <form id="aptform">
+<header id="navbar">
+    <nav class="navbar-container container">
+      <a href="Home.html" class="home-link">
+        <div class="navbar-logo"></div id="logotime">
+        A Place Called Home
+      </a>
+        <button
+            type="button"
+            id="navbar-toggle"
+            aria-controls="navbar-menu"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+        >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="about.html">About Us</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="ourPrograms.html">Our Programs</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="signup.html">Sign-Up</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact Us</a></li>
+          <button class="toggle" id="lightdark" onclick="myFunctionLight()"> &#9680; </button>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<body id="formbody">
+    <h1> A Place Called Home Interest Form</h1>
+   <!-- <form id="signupform">
         <div class="form-control">
             <label for="name" id="label-name">
                 Name
@@ -37,11 +71,34 @@
         <div class="form-control">
             <label for="role" id="label-role">
                 Which option best describes you?
-            </label>
+            </label> -->
+            <div class="form-control">
+                <h2></h2>
+                <p id="label-name">Name</p>
+                <input id="name" placeholder="Enter your name">
+                <p id="nameVali"></p>
+            </div>
+            <div class="form-control">
+                <h2></h2>
+                <p id="label-email">Email</p>
+                <input id="email" placeholder="Enter your email">
+                <p id="emailVali"></p>
+            </div>
+                <div class="form-control">
+                    <h2></h2>
+                    <p id="label-age">Age</p>
+                    <input id="Age" placeholder="Enter your age">
+                    <p id="ageVali"></p>
+                </div>
+                <div class="form-control">
+                    <label for="role" id="label-role">
+                        Which option best describes you?
+                    </label>
+    
         <!-- Dropdown options -->
         <select name="role" id="role">
-            <option value="student">Parent</option>
-            <option value="intern">Youth / Young adult</option>
+            <option value="student">Adult/Parent</option>
+            <option value="youth">Youth/Young adult</option>
             <option value="professional">
                 Professional
             </option>
@@ -49,40 +106,32 @@
         </select>
         </div>
         <div class="form-control">
-            <label> What services are you interested in receiving? 
+            <label> What program/services are you interested in receiving? 
                 <small>(Check all that apply)</small>
             </label>
             <!--Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Educational </input></label>
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Art, music, dance and other creative expressions </input></label>
             <label for="inp-3">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Community engagement and outreach (Basic necessities, career development, etc)</input></label>
             <label for="inp-4">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Health and Nutrition</input></label>
             <label for="inp-5">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Bridge to the Future Program</input></label>
             <label for="inp-6">
                 <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Rise at APCH</input></label>
             <label for="inp-7">
                 <input type="checkbox"
-                       name="inp"></input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp"></input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp"></input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp"></input></label>
+                       name="inp">Other</input></label>
+
         </div>
         <div class="form-control">
             <label for="comment">
@@ -93,8 +142,14 @@
                 placeholder="Enter your comment here">
             </textarea>
         </div>
+        <div>
+            <h2></h2>
+            <p>Please input a number between 1 and 10;</p>
+            <input id="numb">
+            <p id="demo"></p>
+        </div>
         <!-- Multi-line Text Input Control -->
-        <button class="formbtn" type="submit" value="submit">
+        <button class="formbtn" type="submit" value="submit" onclick="validateFormName(); validateFormEmail(); myFunctionAge(); myFunction();">
             Submit
         </button>
     </form>
