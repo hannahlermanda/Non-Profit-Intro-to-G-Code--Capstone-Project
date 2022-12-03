@@ -81,3 +81,5 @@ navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("mouseleave", toggleNavbarVisibility);
+
+//sign-up form validation

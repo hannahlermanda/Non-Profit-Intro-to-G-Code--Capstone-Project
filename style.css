@@ -1002,11 +1002,13 @@ margin-right: 20px;
 .contacth1{
   color: blue;
   text-align: center;
+  text-shadow: 1.25px 0 0 #acb4b3, 0 -1.25px 0 #acb4b3, 0 1.25px 0 #acb4b3, -1.25px 0 0 #acb4b3;
 }
 
 .contacth3{
   color:blue;
   text-align: center;
+  text-shadow: 1.25px 0 0 #acb4b3, 0 -1.25px 0 #acb4b3, 0 1.25px 0 #acb4b3, -1.25px 0 0 #acb4b3;
 }
 
 input[type=text], select, textarea {
