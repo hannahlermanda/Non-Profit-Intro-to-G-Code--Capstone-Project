@@ -96,7 +96,10 @@ function myFunctionAge() {
   let x = document.getElementById("Age").value;
   // If x is Not a Number or less than one or greater than 10
   let text;
-  if (isNaN(x) || x < 1 || x > 100) {
+  if (x == "") {
+    text = "Age must be filled out";
+    document.getElementById("Age").style.border = "thick solid red";
+  } else if (x != "" && x < 1 || x > 100 || isNaN(x)) {
     text = "Age not valid";
     document.getElementById("Age").style.border = "thick solid red";
   } else {
