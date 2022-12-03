@@ -9,7 +9,7 @@
 </head>
 <body id="formbody">
     <h1> A Place Called Home Interest Form</h1>
-    <form id="signupform">
+   <!-- <form id="signupform">
         <div class="form-control">
             <label for="name" id="label-name">
                 Name
@@ -37,7 +37,30 @@
         <div class="form-control">
             <label for="role" id="label-role">
                 Which option best describes you?
-            </label>
+            </label> -->
+            <div class="form-control">
+                <h2></h2>
+                <p id="label-name">Name</p>
+                <input id="name" placeholder="Enter your name">
+                <p id="nameVali"></p>
+            </div>
+            <div class="form-control">
+                <h2></h2>
+                <p id="label-email">Email</p>
+                <input id="email" placeholder="Enter your email">
+                <p id="emailVali"></p>
+            </div>
+                <div class="form-control">
+                    <h2></h2>
+                    <p id="label-age">Age</p>
+                    <input id="Age" placeholder="Enter your age">
+                    <p id="ageVali"></p>
+                </div>
+                <div class="form-control">
+                    <label for="role" id="label-role">
+                        Which option best describes you?
+                    </label>
+    
         <!-- Dropdown options -->
         <select name="role" id="role">
             <option value="student">Adult/Parent</option>
@@ -89,12 +112,10 @@
             <h2></h2>
             <p>Please input a number between 1 and 10;</p>
             <input id="numb">
-            <button type="button"
-            onclick="myFunction()">Submit</button>
             <p id="demo"></p>
         </div>
         <!-- Multi-line Text Input Control -->
-        <button class="formbtn" type="submit" value="submit">
+        <button class="formbtn" type="submit" value="submit" onclick="validateFormName(); validateFormEmail(); myFunctionAge(); myFunction();">
             Submit
         </button>
     </form>

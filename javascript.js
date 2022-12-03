@@ -60,8 +60,12 @@ function myFunction() {
   let text;
   if (isNaN(x) || x < 1 || x > 10) {
     text = "Input not valid";
+    document.getElementById("numb").style.border = "thick solid red";
+
   } else {
     text = "Input OK";
+    document.getElementById("numb").style.border = "thick solid green";
+
   }
   document.getElementById("demo").innerHTML = text;
 }
@@ -83,3 +87,49 @@ navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("mouseleave", toggleNavbarVisibility);
 
 //sign-up form validation
+//name
+function validateFormName() {
+  // Get the value of the input field with id="name"
+  let x = document.getElementById("name").value;
+  // If name is empty
+  let text;
+  if (x == "") {
+    text = "Name must be filled out";
+    document.getElementById("name").style.border = "thick solid red";
+  } else {
+    text = "Name OK";
+    document.getElementById("name").style.border = "thick solid green";
+  }
+  document.getElementById("nameVali").innerHTML = text;
+}
+//email
+function validateFormEmail() {
+  // Get the value of the input field with id="email"
+  let x = document.getElementById("email").value;
+  // If email is empty
+  let text;
+  if (x == "") {
+    text = "Email must be filled out";
+    document.getElementById("email").style.border = "thick solid red";
+  } else {
+    text = "Email OK";
+    document.getElementById("email").style.border = "thick solid green";
+  }
+  document.getElementById("emailVali").innerHTML = text;
+}
+
+//age
+function myFunctionAge() {
+  // Get the value of the input field with id="Age"
+  let x = document.getElementById("Age").value;
+  // If x is Not a Number or less than one or greater than 10
+  let text;
+  if (isNaN(x) || x < 1 || x > 100) {
+    text = "Age not valid";
+    document.getElementById("Age").style.border = "thick solid red";
+  } else {
+    text = "Age OK";
+    document.getElementById("Age").style.border = "thick solid green";
+  }
+  document.getElementById("ageVali").innerHTML = text;
+}
