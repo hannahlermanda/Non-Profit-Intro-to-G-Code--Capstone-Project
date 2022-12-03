@@ -477,6 +477,11 @@ p{
 }
 
 /*Our Programs section*/
+
+#ourPrograms{
+  text-align:left;
+}
+
 .ourProgramsPhotos{
   display: flex;
   align-items: center;
@@ -597,6 +602,10 @@ object-fit: cover;
     .whatWeDoIndivPhotos{
       max-width: 593px;
       max-height: 400px;
+    }
+
+    #ourPrograms{
+      text-align:center;
     }
 }
 
