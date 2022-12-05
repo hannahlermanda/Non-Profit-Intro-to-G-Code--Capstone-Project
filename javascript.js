@@ -17,6 +17,13 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//dark-light mode
+function myFunctionLight() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
 //navbar
 const navbarToggle = navbar.querySelector("#navbar-toggle");
 const navbarMenu = document.querySelector("#navbar-menu");
@@ -31,13 +38,9 @@ const toggleNavbarVisibility = () => {
 navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
-navbarMenu.addEventListener("mouseleave", toggleNavbarVisibility);
+navbarMenu.addEventListener( "click", toggleNavbarVisibility);
 
-//dark-light mode
-function myFunctionLight() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
+
 
 //Number validation
 function myFunction() {

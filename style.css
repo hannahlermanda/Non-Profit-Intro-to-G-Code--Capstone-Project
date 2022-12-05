@@ -1139,8 +1139,9 @@ button:hover{
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   z-index: 1;
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-left: 2px;
+  margin-right: 2px;
+  top: 0;
 }
 
 .navbar-container {
@@ -1173,7 +1174,7 @@ button:hover{
 
 .navbar-link {
   justify-content: center;
-  width: 100%;
+  width: 95%;
   padding: 0.4em 0.8em;
   border-radius: 5px;
 }
@@ -1268,7 +1269,7 @@ button:hover{
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 831px) {
   .navbar-links{
     background: #00C9FF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
@@ -1282,14 +1283,15 @@ button:hover{
 
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 831px) {
   #navbar-toggle[aria-expanded="true"] + #navbar-menu {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 1;
     visibility: visible;
   } 
 }
-@media screen and (min-width: 700px) {
+
+@media screen and (min-width: 832px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"]{
     display: none;
@@ -1307,8 +1309,8 @@ button:hover{
 
   .navbar-links,
   #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-links {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     box-shadow: none;
     position: static;
     flex-direction: row;
