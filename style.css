@@ -33,9 +33,9 @@ h1{
 #lightdark{
   background-color: transparent;
   border-color: transparent;
-  margin-left: 10px;
-  margin-right: 5px;
   font-size: 20px;
+  margin: 1.4rem;
+  border-radius: 5px;
 }
 
 .sections{
@@ -227,7 +227,8 @@ h1{
 /*Our Programs section*/
 
 #ourPrograms{
-  text-align:left;
+  text-align:center;
+  font-size: 50px;
 }
 
 .ourProgramsPhotos{
@@ -285,6 +286,15 @@ object-fit: cover;
   object-fit: cover;
 }
 
+#firstPhoto{
+  margin-right: 20px;
+}
+
+.imaginaryPhoto{
+  display: none;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1061px){
   .ourProgramsIndivPhotosWriting2,
   #greetingCardPhoto,
@@ -308,6 +318,12 @@ object-fit: cover;
     height: auto;
     width: 100%;
     }
+}
+
+@media screen and (min-width:1001px) and (max-width: 1061px){
+  #girlPower{
+    max-height: 370px;
+  }
 }
 
 @media screen and (max-width: 775px){
@@ -388,6 +404,8 @@ object-fit: cover;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     display:grid;
     margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
 .ourProgramsIndivPhotosArtVid{
@@ -451,6 +469,7 @@ margin-left: 20px;
 
 .joinPara{
   text-align: justify;
+  margin-right: 20px;
 }
 
 
@@ -468,7 +487,10 @@ margin-left: 20px;
     float:none;
     padding-bottom: 20px;
     }
-  
+
+  .joinPara{
+    margin-left: 20px;
+    }
 }
 
 /*To Top Button*/
@@ -1068,4 +1090,5 @@ footer{
     background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
+    color: black;
   }

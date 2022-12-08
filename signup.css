@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 #formbody{
     background-color: #CAF0F8;
     font-family: Verdana;
@@ -253,6 +257,14 @@
     }
   }
 
+  #lightdark{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    margin: 1.4rem;
+    border-radius: 5px;
+  }
+
   /*To Top Button*/
 #myBtn {
   display: none; /* Hidden by default */
@@ -285,4 +297,12 @@ footer{
   background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+  color: black;
+}
+
+.dark-mode {
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1626032038952-35c9d5b037c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
