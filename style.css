@@ -13,17 +13,31 @@ body{
     background-size: cover;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 0;
 }
 
 p{
   line-height: 1.5;
 }
+/*dark mode*/
 
 .dark-mode {
   color: white;
   background-image: url("https://images.unsplash.com/photo-1626032038952-35c9d5b037c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+a.anchorSentence:link{
+  color: bisque;
+}
+
+a.anchorSentence:visited{
+  color: #0dfb2d;
+}
+
+a.anchorSentence:hover{
+  color: red;
 }
 
 h1{
@@ -1083,12 +1097,18 @@ button:hover{
 /*footer*/
 footer{
     position: relative;
-    bottom: 1px;
     width: 100%;
-    height: auto;   /* Height of the footer */
+    height: 100px;   /* Height of the footer */
     background: #00C9FF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     color: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
+    padding-left: 15px;
+    margin-left: -10px;
   }
